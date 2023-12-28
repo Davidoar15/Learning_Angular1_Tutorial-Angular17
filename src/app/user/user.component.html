@@ -1,0 +1,24 @@
+<section>
+    <!-- Directiva @if - @else -->
+    @if (isLoggedIn) {
+        <h1>Welcome, {{ username }}</h1>
+        <img 
+            alt="photo" 
+            src="https://github.com/davidoar15.png"
+            (click)="greet()"
+        />
+        <app-games 
+            username="{{ username }}"
+            (addFavoriteEvent)="getFavorite($event)"
+        />
+    } @else {
+        <h1>Start Session</h1>
+        <button (click)="isLoggedIn = true">
+            Log In!
+        </button>
+    }
+
+    @if (favGame !== '') {
+        <p>Your Favorite Game is {{ favGame }}</p>
+    }
+</section>

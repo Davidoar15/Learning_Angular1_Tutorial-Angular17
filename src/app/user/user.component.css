@@ -1,0 +1,25 @@
+section {
+    max-width: 500px;
+    margin: 0 auto;
+    padding-top: 32px;
+    font-size: 24px;
+}
+section > h1 {
+    color: rgb(255, 0, 93)
+}
+section > p {
+    color: white;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+button {
+    padding: 1rem;
+    border-radius: 30%;
+    border: 2px solid rgb(255, 0, 93);
+    cursor: pointer;
+}
